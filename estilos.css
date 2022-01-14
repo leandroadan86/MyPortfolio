@@ -1,0 +1,193 @@
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+      }
+
+body {background: #2c3e50;
+    color:#fff;        }
+
+a{text-decoration: none;
+    color: #fff;}
+
+.center{ text-align: center;}
+
+h1 {font-size: 30px; margin: 0;}
+h2 {font-size: 25px; margin: 0;}
+h3 {font-size: 20px; margin: 0;}
+h4 {font-size: 16px; margin: 0;}
+h5 {font-size: 10px; margin: 0;}
+
+:root{--header-height: 60px;}
+
+header{width: 100vw;
+         height: var(--header-height);
+         background: #2c3e50;}
+
+main{margin-top: calc( var(--header-height) + 10px);}
+
+.presentation{background: url(./images/tierra.jpg) center center fixed;
+            background-size: cover;
+            width: 100%;
+            height: 400px;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0; }
+
+.presentation .col-md-12{text-align: center;
+    padding: 20px 50px; 
+    }
+
+.separacion{padding-top: 10px; padding-bottom: 10px;}
+
+.separacion-xl{padding-top: 60px; padding-bottom: 50px;}
+
+.navbar{background: #2c3e50}
+
+.navbar-collapse{ margin-left: -10px;
+    margin-right: -5px;
+    padding: 1px 20px;
+    background: #2c3e50 ;}
+
+.card{ background: unset;
+       padding: 15px;
+       border: 5px;
+}
+p.card-text{padding-top:12px;}
+
+.card-img-top {width: 100%;
+                margin:0 auto;
+                border-radius: 20px 0 ;
+                margin-top: 15px;
+                border: 1px #fff;
+               }
+
+.cards{ color:#fff;margin-top: 15px;
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -o-transition: margin 0.5s ease-out; }
+
+.cards:hover{margin-top: 5px; color: #fff;}
+
+.btn-normal, .btn-mail{color: #fff;
+    font-family: inherit;
+    background: url(./images/espacio.jpg);
+    border: 3px solid;
+    border-radius: 20px 0;
+        }
+
+.btn-normal:hover{color: #000;
+        background: #fff;
+        border: 5px solid;
+       }
+
+.btn-mail:hover{ color: #000000;
+            background: #fff;}
+
+.linkedin-img{width: 10%;
+        padding-top: 10px;
+        -webkit-transition: all 0.5s ease-out;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;}
+
+.linkedin-img:hover { -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+                }
+
+.github-img{width: 10%;padding-top: 10px;
+                    -webkit-transition: all 0.5s ease-out;
+                    -moz-transition: all 0.5s ease;
+                    -o-transition: all 0.5s ease;}
+                
+.github-img:hover{-webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -o-transform: rotate(10deg);}
+
+
+.projects{background: #000;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 60px;
+        padding-bottom: 60px;}
+
+.sky{ background: url(./images/tierra.jpg) center center fixed;
+    background-size: cover;
+    width: 100%;
+    }
+
+.link{width: 20%; 
+    }
+
+.redes{color: #fff;}
+    
+.rocket{width: 15%;
+    animation-name: move;
+    animation-duration: 6s ;
+    position: relative;
+    animation-iteration-count: infinite ;
+    animation-timing-function: linear;    
+        }
+
+@keyframes move{
+    0%{left: 0%;}
+    100%{left: 85%}
+    }
+
+.big{width: 60%;
+    font-size: 1.5rem;}
+   
+
+.linkedin-div{padding: 15px;
+    background: #fff;
+    color: #000;
+    text-align: center;}
+
+.translate{color: #ffffff8c;
+    font-size: 1.25rem;
+    }
+
+.contact_div{background: #000000;
+    padding-top: 60px;
+    padding-bottom: 50px;
+    text-align: center;}
+
+.footer{text-align: center;
+        padding:10px;
+        background: url(./images/tierra.jpg) center center fixed;
+            background-size: cover;
+            width: 100%;
+            color: #000000;
+        }
+
+.row-footer {align-items: center;
+    justify-content: center; }
+
+
+@media (min-width: 600px) {
+    h1 { font-size: 2.7em; }
+    h2 { font-size: 2.4em; }
+    h3 { font-size: 1.7em; }
+    h4 { font-size: 1.4em; }
+    h5 { font-size: 0.7em; }
+    
+}
+
+@media (min-width: 768px) { 
+    
+    .card-body{ font-size: 1.7rem; }
+    .btn-normal, .btn-mail{ font-size: 1.5rem; font-weight: 600;}
+    .navbar{ font-size: 2rem; }
+    .navbar-collapse{ justify-content: center;}
+    .nav-item{padding: 0 20px;}
+    .big{width: 30%;}
+    .container h1{font-weight: 800 ;}
+}
+
+@media (min-width: 990px){
+    :root{--header-height: 65px;}
+    header{ height: var(--header-height);}
+    main{margin-top: calc( var(--header-height) + 25px);}
+    .rocket{width:7%}
+     }
