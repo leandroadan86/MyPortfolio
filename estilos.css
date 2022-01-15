@@ -63,12 +63,31 @@ p.card-text{padding-top:12px;}
                 border: 1px #fff;
                }
 
-.cards{ color:#fff;margin-top: 15px;
+.img-courses{
+            width: 50%;
+            margin: 0 auto;
+            border-radius: 20px 0 ;
+            margin-top: 15px;
+            border: 1px #fff;
+}
+
+
+
+.cards{ color:#fff;
+    margin-top: 15px;
     -webkit-transition: margin 0.5s ease-out;
     -moz-transition: margin 0.5s ease-out;
     -o-transition: margin 0.5s ease-out; }
 
 .cards:hover{margin-top: 5px; color: #fff;}
+
+.cards-courses{color:#fff;
+    margin-top: 15px;
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -o-transition: margin 0.5s ease-out;}
+
+.cards-courses:hover{margin-top: 5px; color: #fff;}
 
 .btn-normal, .btn-mail{color: #fff;
     font-family: inherit;
@@ -106,7 +125,7 @@ p.card-text{padding-top:12px;}
     -o-transform: rotate(10deg);}
 
 
-.projects{background: #000;
+.projects, .courses {background: #000;
         margin-top: 0;
         margin-bottom: 0;
         padding-top: 60px;
@@ -183,6 +202,7 @@ p.card-text{padding-top:12px;}
     .nav-item{padding: 0 20px;}
     .big{width: 30%;}
     .container h1{font-weight: 800 ;}
+    .img-courses{width: 40%;}
 }
 
 @media (min-width: 990px){
