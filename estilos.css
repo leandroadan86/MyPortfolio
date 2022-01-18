@@ -71,6 +71,17 @@ p.card-text{padding-top:12px;}
             border: 1px #fff;
 }
 
+.img-knowledges{ width: 80px;
+                margin: 0 auto;
+            }
+.card-flex{display: flex;}
+
+.moon{ width: 250px; height: auto;}
+.presentation .row {display: flex; justify-content: center;align-items: center;}
+.luna{display: none;}
+.texto{padding-left: 25px;}
+
+#moon{background: inherit; ; border: 0;}
 
 
 .cards{ color:#fff;
@@ -133,7 +144,7 @@ p.card-text{padding-top:12px;}
 
 .sky{ background: url(./images/tierra.jpg) center center fixed;
     background-size: cover;
-    width: 100%;
+    width: 100%; 
     }
 
 .link{width: 20%; 
@@ -185,12 +196,12 @@ p.card-text{padding-top:12px;}
 
 
 @media (min-width: 600px) {
-    h1 { font-size: 2.7em; }
-    h2 { font-size: 2.4em; }
-    h3 { font-size: 1.7em; }
-    h4 { font-size: 1.4em; }
+    h1 { font-size: 2.5em; }
+    h2 { font-size: 2.1em; }
+    h3 { font-size: 1.4em; }
+    h4 { font-size: 1.1em; }
     h5 { font-size: 0.7em; }
-    
+    .img-knowledges{width: 120px;}
 }
 
 @media (min-width: 768px) { 
@@ -203,6 +214,7 @@ p.card-text{padding-top:12px;}
     .big{width: 30%;}
     .container h1{font-weight: 800 ;}
     .img-courses{width: 40%;}
+    .luna{display: flex; justify-content: center;align-items: center;}
 }
 
 @media (min-width: 990px){
@@ -210,4 +222,5 @@ p.card-text{padding-top:12px;}
     header{ height: var(--header-height);}
     main{margin-top: calc( var(--header-height) + 25px);}
     .rocket{width:7%}
+    .img-knowledges{width: 150px;}
      }
