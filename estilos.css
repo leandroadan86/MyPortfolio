@@ -77,7 +77,7 @@ p.card-text{padding-top:12px;}
             }
 .card-flex{display: flex;}
 
-.moon{ width: 250px; height: auto;}
+.moon{ width: 250px; height: auto; cursor:hand}
 .presentation .row {display: flex; justify-content: center;align-items: center;}
 .luna{display: none;}
 .texto{padding-left: 25px;}
