@@ -32,13 +32,13 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#projects" hidden="hidden">Proyectos</a>
+                            <a class="nav-link" href="#projects">Proyectos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./cursos.html">Cursos</a>
+                            <a class="nav-link" href="#courses">Cursos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contactame</a>
+                            <a class="nav-link" href="#contact">Charlemos!</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./index.html">English version</a>
@@ -52,14 +52,14 @@
     <main>
 <div class="container-fluid presentation separacion">
     <div class="row">
-        <div class="container-fluid col-12 col-sm-12 col-md-6 texto">
+        <div class="container-fluid col-12 col-sm-12 col-md-6 texto" id="container">
             <h1>¡Hola! Soy Leandro</h1>
             <h2>Diseñador web con base en Buenos Aires.</h2>
             <h3>Trabajando freelance como diseñador y front-end developer.</h3>
             <h3>Me especializo en crear sitios para pequeños emprendimientos.</h3>
             <h3>Realizo diseños web personalizados a precios accesibles.</h3>
             <h3>Hechale un vistazo a mis trabajos aquí debajo!</h3>
-            <h3 class="hidden">(Presioná la Luna para cambiarla)</h3>
+            <h3 class="hidden">(Presiona la Luna)</h3>
         </div>
         <div class="container-fluid col-12 col-sm-12 col-md-6 luna">
             <img src="./images/moon2.png" alt="moon" class="moon" id="moon">
@@ -67,9 +67,9 @@
     </div>    
 </div>
 
-        <div class="container-fluid projects">
-            <h1 class="text-center">Algunos proyectos</h1>
-            <div class="row justify-content-center">
+        <div class="container-fluid projects" id="projects">
+            <h1 class="text-center">Proyectos</h1>
+            <div class="row justify-content-center animated">
                 <div class="card col-6 col-md-3 col-lg-3">
                     <a href="https://leandroadan86.github.io/bukepan/" Target="_blank" class="cards"><img src="./images/Bukepan.jpg" class="card-img-top">
                     <div class="card-body text-center">
@@ -106,36 +106,71 @@
     
 <div class="separacion-xl sky">
     <h1 class="text-center">El cielo es el límite!</h1>
-    <img src="./images/rocket.png" alt="" class="rocket">
+    <img src="./images/rocket.png" alt="Un cohete en el espacio" class="rocket">
 </div>
 
-    <div class="contact_div" id="contact">
-        <h2>Estoy disponible a escuchar propuestas, trabajar en tus proyectos y darle vida a tus ideas.</h2>
-        <h2>Estoy a un click de distancia.</h2>
-        <br>
-        <a href="mailto:leandroadan86@hotmail.com" class="btn btn-mail">CHARLEMOS POR MAIL</a>
+<div class="container-fluid courses" id="courses">
+    <h2 class="titulo text-center">Cursos certificados:</h2>
+    <div class="row justify-content-center animated">        
+        <div class="card col-6 col-sm-3 col-md-3">
+            <a href="./images/telefonica.jpg" Target="_blank" class="cards-courses"> 
+                <img src="./images/telefonica.jpg" alt="" class="img-courses">
+                <h3>Programación con JavaScript - Conecta empleo (Fundación Telefónica)</h3>
+            </a>
+        </div>
+        <div class="card col-6 col-sm-3 col-md-3">
+            <a href="./certifications/devrcock.png" Target="_blank" class="cards-courses">
+                <img src="./images/dev-rock.jpg" alt="" class="img-courses">
+                <h3>HTML y Css - Escuela DevRock (Jonatan Ariste)</h3>
+            </a>
+        </div>
+        <div class="card col-6 col-sm-3 col-md-3">
+            <a href="./certifications/./google.png" Target="_blank" class="cards-courses">
+                <img src="./images/google.jpg" alt="" class="img-courses">
+                <h3>Int. al desarrollo web 1 y 2- Google Actívate</h3>
+            </a>
+        </div>    
     </div>
-    <div class="linkedin-div">
-        <h2>Puedes contactarme por Linkedin también!</h2>
+</div>
+
+
+<div class="container-fluid xs-courses">
+    <h2 class="titulo text-center separacion">Otros conocimientos</h2>
+    <div class="row animated">
+        <div class="card-flex col-md-12">
+            <img src="./images/jquery.png" alt="jQuery" title="jQuery" class="img-knowledges">
+            <img src="./images/bootstrap.png" alt="BootStrap" title="BoostStrap" class="img-knowledges">
+            <img src="./images/figma.png" alt="Figma" title="Figma" class="img-knowledges">
+        </div>
+    </div>
+</div>
+
+
+    <div class="container-fluid contact_div" id="contact">
+        <h2>Estoy disponible a escuchar propuestas, trabajar en tus proyectos y darle vida a tus ideas.</h2>
+        <h2 class="separacion">Estoy a un click de distancia.</h2>
+        <a href="mailto:leandroadan86@hotmail.com" target="_blank">
+            <img src="./images/email.png" alt="Icono de un Email" class="email-img">
+        </a>
         <a href="https://www.linkedin.com/in/leandro-martin-adan" target="_blank">
-            <img src="./images/linkedin.png" alt="imagen de linkedin" class="linkedin-img">
+            <img src="./images/linkedin.png" alt="Linkedin icono" class="linkedin-img">
+        </a>
+        <a href="https://www.github.com/leandroadan86" target="_blank">
+            <img src="./images/github-sign.png" alt="GitHub Icono" class="github-img">
         </a>
     </div>
 </main>
 
 <footer class="footer">
     <div class="container-fluid">
-        <div class="row row-footer">
-            <div class="container-fluid col-6 col-md-6 col-sm-6">
-                <h3>Web realizada por mi ;-)</h3>
-                <h3>2022</h3>
-            </div>   
-            <div class="container-fluid col-6 col-md-6 col-sm-6">
-                <a href="https://www.github.com/leandroadan86" target="_blank">
-                    <img src="./images/github-sign.png" alt="" class="github-img">
-                </a>
-                <h3>GitHub</h3>
+        <div class="row row-footer">  
+            <div class="container-fluid col-12 col-md-6 col-sm-6">
+                <cite>“Algo puede suceder si primero has determinado que es posible que suceda.” Elon Musk</cite>
             </div>
+            <div class="container-fluid col-12 col-md-6 col-sm-6 separacion">
+                <h3>Web realizada por Leandro Adán</h3>
+                <h3>2022</h3>
+            </div> 
         </div>
     </div>
 </footer>

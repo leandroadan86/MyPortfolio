@@ -5,7 +5,8 @@
       }
 
 body {background: #2c3e50;
-    color:#fff;        }
+    color:#fff;
+    cursor: url("./images/cohete.png"), auto;}
 
 a{text-decoration: none;
     color: #fff;}
@@ -17,6 +18,7 @@ h2 {font-size: 25px; margin: 0;}
 h3 {font-size: 20px; margin: 0;}
 h4 {font-size: 16px; margin: 0;}
 h5 {font-size: 10px; margin: 0;}
+cite{font-size: 1.1rem;}
 
 .hidden{display: none;}
 :root{--header-height: 60px;}
@@ -30,7 +32,7 @@ main{margin-top: calc( var(--header-height) + 10px);}
 .presentation{background: url(./images/tierra.jpg) center center ;
             background-size: cover;
             width: 100%;
-            height: 400px;
+            height: 500px;
             display:flex;
             align-items: center;
             justify-content: center;
@@ -43,6 +45,12 @@ main{margin-top: calc( var(--header-height) + 10px);}
 .separacion{padding-top: 10px; padding-bottom: 10px;}
 
 .separacion-xl{padding-top: 60px; padding-bottom: 50px;}
+
+.animated { opacity: 0.1;
+    transition: all 1.5s}
+
+.aparece {opacity: 1;}
+
 
 .navbar{background: #2c3e50}
 
@@ -77,9 +85,12 @@ p.card-text{padding-top:12px;}
             }
 .card-flex{display: flex;}
 
-.moon{ width: 250px; height: auto; cursor:hand}
+.moon{ width: 250px; height: auto; cursor: url("./images/argentina.png"), auto}
+
 .presentation .row {display: flex; justify-content: center;align-items: center;}
+
 .luna{display: none;}
+
 .texto{padding-left: 25px;}
 
 #moon{background: inherit; ; border: 0;}
@@ -91,7 +102,10 @@ p.card-text{padding-top:12px;}
     -moz-transition: margin 0.5s ease-out;
     -o-transition: margin 0.5s ease-out; }
 
-.cards:hover{margin-top: 5px; color: #fff;}
+.cards:hover, 
+    .cards-courses:hover{margin-top: 5px;
+        color: #fff;
+        }
 
 .cards-courses{color:#fff;
     margin-top: 15px;
@@ -99,13 +113,12 @@ p.card-text{padding-top:12px;}
     -moz-transition: margin 0.5s ease-out;
     -o-transition: margin 0.5s ease-out;}
 
-.cards-courses:hover{margin-top: 5px; color: #fff;}
 
-.btn-normal, .btn-mail{color: #fff;
-    font-family: inherit;
-    background: url(./images/espacio.jpg);
-    border: 3px solid;
-    border-radius: 20px 0;
+.btn-normal {color: #fff;
+        font-family: inherit;
+        background: url(./images/tierra.jpg);
+        border: 3px solid;
+        border-radius: 20px 0;
         }
 
 .btn-normal:hover{color: #000;
@@ -113,35 +126,39 @@ p.card-text{padding-top:12px;}
         border: 5px solid;
        }
 
-.btn-mail:hover{ color: #000000;
-            background: #fff;}
-
-.linkedin-img{width: 10%;
-        padding-top: 10px;
-        -webkit-transition: all 0.5s ease-out;
-        -moz-transition: all 0.5s ease;
-        -o-transition: all 0.5s ease;}
-
-.linkedin-img:hover { -webkit-transform: rotate(-10deg);
-    -moz-transform: rotate(-10deg);
-    -o-transform: rotate(-10deg);
-                }
-
-.github-img{width: 10%;padding-top: 10px;
-                    -webkit-transition: all 0.5s ease-out;
-                    -moz-transition: all 0.5s ease;
-                    -o-transition: all 0.5s ease;}
-                
-.github-img:hover{-webkit-transform: rotate(10deg);
-    -moz-transform: rotate(10deg);
-    -o-transform: rotate(10deg);}
+.linkedin-img, 
+    .github-img,
+        .email-img {width: 15%;
+            padding-top: 10px;
+            -webkit-transition: all 0.5s ease-out;
+            -moz-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;}
+           
+.github-img:hover, 
+    .linkedin-img:hover,
+        .email-img:hover {-webkit-transform: rotate(-10deg);
+            -moz-transform: rotate(-10deg);
+            -o-transform: rotate(-10deg);}
 
 
-.projects, .courses {background: #000;
+.projects{background: #000;
         margin-top: 0;
         margin-bottom: 0;
-        padding-top: 60px;
-        padding-bottom: 60px;}
+        padding-top: 100px;
+        height: 90vh;}
+
+.courses {background: #000;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 100px;
+    height: 100vh;}
+
+.xs-courses{background: #000;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 50px;
+    height: 40vh;
+}
 
 .sky{ background: url(./images/tierra.jpg) center center;
     background-size: cover;
@@ -169,27 +186,22 @@ p.card-text{padding-top:12px;}
 .big{width: 60%;
     font-size: 1.5rem;}
    
-
-.linkedin-div{padding: 15px;
-    background: #fff;
-    color: #000;
-    text-align: center;}
-
 .translate{color: #ffffff8c;
     font-size: 1.25rem;
     }
 
-.contact_div{background: #000000;
-    padding-top: 60px;
-    padding-bottom: 50px;
-    text-align: center;}
+.contact_div{background: url(./images/tierra.jpg) center center;
+    text-align: center ;
+    height: 50vh;
+    padding-top: 50px;}
+
+.contact_div a{ padding-left: 15px;padding-right: 15px;}
 
 .footer{text-align: center;
         padding:10px;
-        background: url(./images/tierra.jpg) center center;
-            background-size: cover;
-            width: 100%;
-            color: #000000;
+        background: #fff;
+        width: 100%;
+        color: #000000;
         }
 
 .row-footer {align-items: center;
@@ -202,12 +214,19 @@ p.card-text{padding-top:12px;}
     h4 { font-size: 1.1em; }
     h5 { font-size: 0.7em; }
     .img-knowledges{width: 120px;}
+    .projects {height: 100vh;}
+    .courses {height: 69vh;}
+    .linkedin-img, 
+    .github-img,
+        .email-img {width: 10%;
+            padding-top: 10px;}
 }
 
 @media (min-width: 768px) { 
     
     .card-body{ font-size: 1.7rem; }
-    .btn-normal, .btn-mail{ font-size: 1.5rem; font-weight: 600;}
+    .btn-normal, 
+        .btn-mail{ font-size: 1.5rem; font-weight: 600;}
     .navbar{ font-size: 2rem; }
     .navbar-collapse{ justify-content: center;}
     .nav-item{padding: 0 20px;}
@@ -216,7 +235,13 @@ p.card-text{padding-top:12px;}
     .img-courses{width: 40%;}
     .luna{display: flex; justify-content: center;align-items: center;}
     .hidden{display: block;}
-    .presentation, .footer, .sky {background: url(./images/tierra.jpg) center center fixed;}
+    .contact_div, 
+        .presentation{background: url(./images/tierra.jpg) center center fixed;}
+    .cards{opacity: 0.5;}
+    .cards-courses{opacity: 0.5;}
+    .cards:hover,
+        .cards-courses:hover {opacity: 1;}
+    
 }
 
 @media (min-width: 990px){
@@ -226,3 +251,9 @@ p.card-text{padding-top:12px;}
     .rocket{width:7%}
     .img-knowledges{width: 150px;}
      }
+
+@media (max-width: 365px){
+    .projects{height: 100vh;}
+    .courses{height: 125vh;}
+    .contact_div{height: 60vh}
+}
