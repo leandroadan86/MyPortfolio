@@ -252,8 +252,9 @@ p.card-text{padding-top:12px;}
     .img-knowledges{width: 150px;}
      }
 
-@media (max-width: 365px){
-    .projects{height: 100vh;}
-    .courses{height: 125vh;}
-    .contact_div{height: 60vh}
+@media (max-height: 900px){
+    .projects{height: auto;}
+    .courses{height: auto;}
+    .contact_div{height: 40vh}
+    .xs-courses{height: 30vh;}
 }
